@@ -1,4 +1,8 @@
 package com.zeros.controller;
 
-public class ExceptionController {
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/showErrorPages")
+public class ExceptionController extends HttpServlet {
 }
