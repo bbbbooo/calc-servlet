@@ -32,7 +32,7 @@ public class ResultView extends HttpServlet {
         resp.setContentType("text/html;charset=UTF-8");
 
         PrintWriter out = resp.getWriter();
-        out.print(redirectText.toString());
+        out.print(redirectText);
 
         out.flush();
         out.close();

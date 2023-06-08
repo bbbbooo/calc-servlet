@@ -22,6 +22,9 @@ public class Calculator {
         }
 
         else{
+            if (lnumber==0){
+                throw new IllegalArgumentException();
+            }
             return fnumber % lnumber;
         }
     }
