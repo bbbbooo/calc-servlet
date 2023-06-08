@@ -13,7 +13,6 @@ import java.io.PrintWriter;
 public class ExceptionView extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String statuscode = req.getAttribute("jakarta.servlet.error.status_code").toString();
         String msg = "0으로는 나눌 수 없습니다";
 
         StringBuilder expages = new StringBuilder();
