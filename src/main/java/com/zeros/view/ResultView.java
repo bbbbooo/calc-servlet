@@ -18,14 +18,13 @@ public class ResultView extends HttpServlet {
         int result = (int) req.getAttribute("result");
         System.out.println("result = " + result);
 
-
         redirectText.append("<!doctype html>\n")
                 .append("<html>\n")
                 .append("<head></head>\n")
                 .append("<body>\n")
-                .append("<h1>결과는")
+                .append("<h1>결과는 ")
                 .append(result)
-                .append("입니다.</h1>\n")
+                .append(" 입니다.</h1>\n")
                 .append("</body>\n")
                 .append("</html>");
 
